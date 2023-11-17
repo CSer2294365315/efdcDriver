@@ -1,4 +1,4 @@
-package com.hohai.POJO;
+package com.hohai.pojo;
 
 import lombok.Data;
 
