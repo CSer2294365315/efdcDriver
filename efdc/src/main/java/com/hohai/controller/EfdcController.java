@@ -95,7 +95,7 @@ public class EfdcController {
             preparedStatement.setString(5, "");
             preparedStatement.setString(6, NewEfdcExeFilePath);
             //TODO 待定
-            preparedStatement.setString(7, NewEfdcExeFilePath);
+            preparedStatement.setString(7, NewEfdcExeFilePath + "/#output");
 
             preparedStatement.execute();
 

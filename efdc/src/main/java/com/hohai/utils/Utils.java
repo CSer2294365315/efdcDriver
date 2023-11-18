@@ -2,8 +2,7 @@ package com.hohai.utils;
 
 import com.alibaba.fastjson.JSON;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.sql.Connection;
@@ -73,6 +72,9 @@ public class Utils {
         }
     }
 
+    /**
+     * 获取到当前时间，格式如202311181500
+     */
     public static String getCurrentTimeStampStr() {
         LocalDateTime currentTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm");
@@ -80,7 +82,6 @@ public class Utils {
         return timestampStr;
     }
 
-    //"jdbc:mysql://10.10.230.2:9030/tx_dev"
     //TODO 获取到JDBC连接
     public static Connection getConnection(String url, String userName, String password) {
         try {
@@ -96,6 +97,9 @@ public class Utils {
         }
     }
 
+    /**
+     * 生成返回JSON
+     */
     public static String getUploadStatusJsonStr(Integer statusCode, String msg,String id) {
         HashMap<String, Object> map = new HashMap<>();
         map.put("status", statusCode);
@@ -103,5 +107,42 @@ public class Utils {
         map.put("taskId",id);
         String jsonStr = JSON.toJSONString(map);
         return jsonStr;
+    }
+
+    /**
+     * 将磁盘中的某个文件中的某个字符串，替换为指定的字符串
+     */
+    public static boolean replaceFileString(String filePath , String searchStr , String replaceStr) {
+        try {
+            // 读取文件内容
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            StringBuilder content = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append(System.lineSeparator());
+            }
+            reader.close();
+
+            // 执行字符串替换
+            String updatedContent = content.toString().replace(searchStr, replaceStr);
+
+            // 覆盖源文件
+            BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
+            writer.write(updatedContent);
+            writer.close();
+
+            System.out.println("字符串替换完成。");
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        replaceFileString("/Users/cui/Desktop/efdc/秦淮河_202311181510/getefdc.inp",
+                "@@@EfdcInpFilePath@@@",
+                "/Users/cui/Desktop/efdc/秦淮河_202311181510/test"
+                );
     }
 }

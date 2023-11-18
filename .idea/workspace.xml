@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb2db55c-4bea-4349-84e2-eee15a891fb6" name="Changes" comment="增加check任务进度">
+    <list default="true" id="cb2db55c-4bea-4349-84e2-eee15a891fb6" name="Changes" comment="修改任务上传">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/controller/EfdcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/controller/EfdcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/GlobalConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/GlobalConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/schedule/EfdcScheduleTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/schedule/EfdcScheduleTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +62,7 @@
       <recent name="$PROJECT_DIR$/efdc/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApplication">
+  <component name="RunManager" selected="Application.Utils">
     <configuration name="EfdcController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hohai.controller.EfdcController" />
       <module name="efdc" />
@@ -89,8 +89,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hohai.utils.Utils" />
+      <module name="efdc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hohai.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Utils" />
         <item itemvalue="Application.MainApplication" />
         <item itemvalue="Application.EfdcController" />
       </list>
@@ -133,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700290413648</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改任务上传">
+      <created>1700291354925</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700291354925</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +173,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="增加数据库任务" />
     <MESSAGE value="增加check任务进度" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加check任务进度" />
+    <MESSAGE value="修改任务上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改任务上传" />
   </component>
 </project>
