@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb2db55c-4bea-4349-84e2-eee15a891fb6" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/efdc/src/main/resources/profile.sql" afterDir="false" />
+    <list default="true" id="cb2db55c-4bea-4349-84e2-eee15a891fb6" name="Changes" comment="增加数据库任务">
+      <change afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/schedule/EfdcScheduleTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/GlobalConstant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/controller/EfdcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/controller/EfdcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/efdc/src/main/java/com/hohai/utils/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/cui/companyCode/efdcDriver/efdc/src/main/resources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cui/companyCode/efdcDriver/efdc/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/efdc/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EfdcController">
+  <component name="RunManager" selected="Application.MainApplication">
     <configuration name="EfdcController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hohai.controller.EfdcController" />
       <module name="efdc" />
@@ -92,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EfdcController" />
         <item itemvalue="Application.MainApplication" />
+        <item itemvalue="Application.EfdcController" />
       </list>
     </recent_temporary>
   </component>
@@ -120,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700215538014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加数据库任务">
+      <created>1700229558884</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700229558884</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="增加数据库任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加数据库任务" />
   </component>
 </project>

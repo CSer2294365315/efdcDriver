@@ -84,7 +84,7 @@ public class Utils {
     //TODO 获取到JDBC连接
     public static Connection getConnection(String url, String userName, String password) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
                     url,
                     userName,
