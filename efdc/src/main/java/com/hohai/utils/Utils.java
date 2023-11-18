@@ -45,7 +45,7 @@ public class Utils {
                 }
             }
 
-            System.out.println("文件夹复制完成！");
+            System.out.println("文件夹复制完成！路径为:" + destinationFolderPath);
             return true;
         } catch (IOException e) {
             e.printStackTrace();
@@ -96,11 +96,11 @@ public class Utils {
         }
     }
 
-    public static String getUploadStatusJsonStr(Integer statusCode, String msg,String data) {
+    public static String getUploadStatusJsonStr(Integer statusCode, String msg,String id) {
         HashMap<String, Object> map = new HashMap<>();
         map.put("status", statusCode);
         map.put("msg", msg);
-        map.put("data",data);
+        map.put("taskId",id);
         String jsonStr = JSON.toJSONString(map);
         return jsonStr;
     }

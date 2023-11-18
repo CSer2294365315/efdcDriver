@@ -43,7 +43,7 @@ public class EfdcController {
      * 测试通过
      */
     @PostMapping("/upload")
-    public String uploadTask(@RequestParam(value = "files") MultipartFile[] files,
+    public String uploadTask(@RequestParam(value = "inpFiles") MultipartFile[] files,
                            @RequestParam("drainage") String drainage,
                            @RequestParam("taskName") String taskName) {
 
